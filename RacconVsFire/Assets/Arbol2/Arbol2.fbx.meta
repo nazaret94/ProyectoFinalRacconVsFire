@@ -3,7 +3,42 @@ guid: 28c8f878d337e4c66b4ad78eb7f8c670
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #31
+    second: {fileID: 2100000, guid: 68c264dd31cd14a3f9045acfaaf6fddb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #32
+    second: {fileID: 2100000, guid: 6425265bb1d894c8a8be6d2b716fbaed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #36
+    second: {fileID: 2100000, guid: a8a65a47daf074f2ab889dbb30c75abe, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Arbol3.1
+    second: {fileID: 2800000, guid: 968cdd28d15204f918ce3495b53ef368, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Arbol3.2
+    second: {fileID: 2800000, guid: a02d06b130ff8454bbd4df2eabe340f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "Sin t\xEDtulo-1"
+    second: {fileID: 2800000, guid: e5b0a79ade6104b1ea469c2fa9f2d044, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jacaranda
+    second: {fileID: 2800000, guid: 880bf714bec554a3f84c3d2f4f145091, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -34,7 +69,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 4
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -85,7 +120,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.1016
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
