@@ -11,7 +11,14 @@ public class MenuInicial : MonoBehaviour
     public void CargaNivel1()
     {
      SceneManager.LoadScene("Nivel 1");
-        Debug.Log("Carga Nivel 1");
+    }
+    public void CargaMenuInicial()
+    {
+        SceneManager.LoadScene("Menu Inicial");
+    }
+    public void CaragaNivel2()
+    {
+        SceneManager.LoadScene("Nivel 2");
     }
     public void ActivarPantalla(GameObject pantalla)
     {
