@@ -13,8 +13,9 @@ public class PlayerController : MonoBehaviour
     public Transform roco;
 
     public float speed;
-   float jx;
-   float jz;
+   float jx=0;
+   float jz=0;
+ 
 
     public float speedRot;
     float rotH;
@@ -29,32 +30,26 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         camarav = Camera.main.transform;
-    }
+    } 
 
     private void Update()
     {
         rocoStateInfo = rocoAnimator.GetCurrentAnimatorStateInfo(0);
-     
-        jx = joystickMover.Horizontal + Input.GetAxis("Horizontal");
-        jz = joystickMover.Vertical + Input.GetAxis("Vertical");
-       Debug.Log("x" + jx+"z"+ jz);
-        if ((jx > .02 && jz > .02) || (jx > .02 && jz < -.02)|| (jx < -.02 && jz > .02)|| (jx < -.02 && jz < -.02))
-        {
-            rocoAnimator.SetBool("Caminar", true);
-            Mover(jx, jz);
-        }
-
-        if ((jx < .01 && jz < .01) || (jx < .01 && jz > -.01) || (jx > -.01 && jz < .01) || (jx > -.01 && jz > -.01))
-        {
-            rocoAnimator.SetBool("Caminar", false);
-        }
-
+        Mover();
         Rotar();
     }
 
-    void Mover(float x, float z)
+    void Mover()
     {
-        controller.Move((roco.transform.forward * z * Time.deltaTime) + (roco.transform.right * speed * x * Time.deltaTime));
+        jx = joystickMover.Horizontal + Input.GetAxis("Horizontal");
+        jz = joystickMover.Vertical + Input.GetAxis("Vertical");
+
+        if ((jx >= .03 && jz >= .03) || (jx >= .03 && jz <= -.03)|| (jx <= -.03 && jz >= .03)|| (jx <= -.03 && jz <= -.03))
+        {
+           rocoAnimator.SetTrigger("Caminar");
+        controller.Move((roco.transform.forward * jz * Time.deltaTime) + (roco.transform.right * speed * jx * Time.deltaTime));
+        }
+        
     }
 
     void Rotar()
