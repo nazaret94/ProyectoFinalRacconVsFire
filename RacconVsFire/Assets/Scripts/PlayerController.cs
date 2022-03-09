@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
 
     public Animator rocoAnimator;
     public AnimatorStateInfo rocoStateInfo;
-    Vector3 mover;
 
     Transform camarav;
 
@@ -46,13 +45,12 @@ public class PlayerController : MonoBehaviour
 
         if ((jx >= .03 && jz >= .03) || (jx >= .03 && jz <= -.03)|| (jx <= -.03 && jz >= .03)|| (jx <= -.03 && jz <= -.03))
         {
-       //    rocoAnimator.SetTrigger("Caminar");
-          
+            rocoAnimator.SetBool("Caminar", true);
             controller.Move((roco.transform.forward * jz * Time.deltaTime) + (roco.transform.right * speed * jx * Time.deltaTime));
         }
         else
         {
-
+            rocoAnimator.SetBool("Caminar", false);
         }
         
     }
@@ -68,8 +66,10 @@ public class PlayerController : MonoBehaviour
     public void Correr()
     {
         rocoAnimator.SetTrigger("Correr");
+  
     }
 
+ 
     public void Dispara()
     {
      rocoAnimator.SetTrigger("Dispara");
