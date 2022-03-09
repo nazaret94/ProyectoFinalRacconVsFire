@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour
     public Transform roco;
 
     public float speed;
-   float jx=0;
-   float jz=0;
+   float jx = 0;
+    float jz = 0;
  
 
     public float speedRot;
@@ -46,8 +46,13 @@ public class PlayerController : MonoBehaviour
 
         if ((jx >= .03 && jz >= .03) || (jx >= .03 && jz <= -.03)|| (jx <= -.03 && jz >= .03)|| (jx <= -.03 && jz <= -.03))
         {
-           rocoAnimator.SetTrigger("Caminar");
-        controller.Move((roco.transform.forward * jz * Time.deltaTime) + (roco.transform.right * speed * jx * Time.deltaTime));
+       //    rocoAnimator.SetTrigger("Caminar");
+          
+            controller.Move((roco.transform.forward * jz * Time.deltaTime) + (roco.transform.right * speed * jx * Time.deltaTime));
+        }
+        else
+        {
+
         }
         
     }
