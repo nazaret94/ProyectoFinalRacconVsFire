@@ -7,18 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material #31
-    second: {fileID: 2100000, guid: 68c264dd31cd14a3f9045acfaaf6fddb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Material #32
     second: {fileID: 2100000, guid: 6425265bb1d894c8a8be6d2b716fbaed, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #36
-    second: {fileID: 2100000, guid: a8a65a47daf074f2ab889dbb30c75abe, type: 2}
+    second: {fileID: 2100000, guid: c38abbe72f2aa4f3c9e982c6180fd533, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
@@ -120,7 +115,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.1016
+    globalScale: 4
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
