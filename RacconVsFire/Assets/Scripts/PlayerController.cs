@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     public Joystick joystickMover;
     public Joystick joystickGirar;
 
@@ -37,7 +38,7 @@ public class PlayerController : MonoBehaviour
         Mover();
         Rotar();
     }
-
+    
     void Mover()
     {
         jx = joystickMover.Horizontal + Input.GetAxis("Horizontal");
