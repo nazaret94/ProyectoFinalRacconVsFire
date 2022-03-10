@@ -9,5 +9,4 @@ public class Flama : MonoBehaviour
         Destroy(this.gameObject, 3f);
     }
 
-  
 }
