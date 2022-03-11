@@ -2,13 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Solis Torres Mariana Nazaret
+
 public class Arboles : MonoBehaviour
-{ 
+{
+    //Event
+    public delegate void Panel();
+    public static event Panel PanelWin;
+    public static event Panel PanelGameOver;
+
+    //Subscripcion a evento
+    private void OnEnable()
+    {
+        ArbolCollider.ApagaA += ApagaArbol;
+    }
+
+    private void OnDisable()
+    {
+        ArbolCollider.ApagaA -= ApagaArbol;
+    }
+
     public AnimatorStateInfo arbolStateInfo;
     public Animator []arboles;
-
-    public GameObject panelGameOver;
-    public GameObject panelWin;
 
     public int numArbolesSinFuego = 10;
     public int numArbolesFuego = 0;
@@ -18,78 +33,70 @@ public class Arboles : MonoBehaviour
         StartCoroutine("PrendeArbol");
     }
 
-    private void Update()
-    {
-       
-        if (numArbolesSinFuego == 0)
-        {
-           panelWin.SetActive(true);
-        }
-
-        if (numArbolesFuego == 10)
-        {
-            panelGameOver.SetActive(true);
-        }
-    }
-
     IEnumerator PrendeArbol()
     {
        
         arboles[0].SetBool("ArbolF", true);
-        numArbolesSinFuego -= 1;//10-1=9
+        numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(7f);
         
         arboles[1].SetBool("ArbolF", true);
-        numArbolesSinFuego -= 1;//9-1=8
+        numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(7f);
        
         arboles[2].SetBool("ArbolF", true);
-        numArbolesSinFuego -= 1; //8 - 1 = 7
+        numArbolesSinFuego -= 1; 
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(7f);
         
         arboles[3].SetBool("ArbolF", true);
-        numArbolesSinFuego -= 1; //7-1=6
+        numArbolesSinFuego -= 1; 
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(7f);
         
         arboles[4].SetBool("ArbolF", true);
-        numArbolesSinFuego -= 1; //6-1=5
-        yield return new WaitForSeconds(4f);
+        numArbolesSinFuego -= 1; 
+        yield return new WaitForSeconds(7f);
        
         arboles[5].SetBool("ArbolF", true);
-        numArbolesSinFuego -= 1;//5-1=4
+        numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(7f);
        
         arboles[6].SetBool("ArbolF", true);
-        numArbolesSinFuego -= 1;//4-1=3
+        numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(7f);
 
         arboles[7].SetBool("ArbolF", true);
-        numArbolesSinFuego -= 1;//3-1=2
+        numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(7f);
 
         arboles[8].SetBool("ArbolF", true);
-        numArbolesSinFuego -= 1;//2-1=1
+        numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(7f);
 
         arboles[9].SetBool("ArbolF", true);
-        numArbolesSinFuego -= 1;//1-1=0
+        numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(4f);
-        Debug.Log("Game Over"+numArbolesSinFuego);
-        
+        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(1f);
+        PanelGameOver();
     }
 
  public void ApagaArbol()
     {
         numArbolesSinFuego += 1;
         numArbolesFuego -= 1;
+
+        if (numArbolesSinFuego == 0)
+        {
+            PanelWin();
+        }
     }
+
 }

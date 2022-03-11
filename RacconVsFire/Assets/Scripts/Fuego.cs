@@ -9,8 +9,7 @@ public class Fuego : MonoBehaviour
     public GameObject fuegoPrefab;
     public GameObject Arbol;
     public float fuerzaFuego;
-  
-
+ 
     private void OnTriggerEnter(Collider other)
     {
         if( other.transform.tag == "Roco")

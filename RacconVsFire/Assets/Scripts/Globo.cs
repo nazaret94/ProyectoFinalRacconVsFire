@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Solis Torres Mariana Nazaret
+
 public class Globo : MonoBehaviour
 {
     public GameObject GloboPrefab;
-    public float fuerzaGlobo;
     private GameObject tmpGlobo;
-
     public GameObject Pistola;
+
+    public float fuerzaGlobo;
 
     public void DisparaGlobo()
     {
@@ -19,11 +21,9 @@ public class Globo : MonoBehaviour
 
     void DisparaG()
     {
-
         tmpGlobo = Instantiate(GloboPrefab, transform.position, Quaternion.identity);
         tmpGlobo.transform.forward = transform.forward;
-        tmpGlobo.GetComponent<Rigidbody>().AddForce(transform.forward * fuerzaGlobo, ForceMode.Impulse);
-       
+        tmpGlobo.GetComponent<Rigidbody>().AddForce(transform.forward * fuerzaGlobo, ForceMode.Impulse);    
     }
     void Activa()
     {

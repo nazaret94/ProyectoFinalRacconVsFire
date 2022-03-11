@@ -2,25 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Solis Torres Mariana Nazaret
+
 public class RocoCollider : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //Event Vida del Mapache
+    public delegate void Vida();
+    public static event Vida SumaVida;
+    public static event Vida RestaVida;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Flama")
         {
-            
+           if(RestaVida != null)
+            {
+                RestaVida();
+            } 
         }
+
+        if(other.transform.tag == "corazon")
+        {
+            if(SumaVida!= null)
+            {
+                SumaVida();
+            }
+        }
+
     }
+  
 }

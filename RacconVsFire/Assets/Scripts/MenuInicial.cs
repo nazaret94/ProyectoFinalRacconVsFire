@@ -7,10 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuInicial : MonoBehaviour
 {
-
+  
     public void CargaNivel1()
     {
-     SceneManager.LoadScene("Nivel 1");
+        SceneManager.LoadScene("Nivel 1");
     }
     public void CargaMenuInicial()
     {
@@ -18,20 +18,28 @@ public class MenuInicial : MonoBehaviour
     }
     public void CaragaNivel2()
     {
+    
         SceneManager.LoadScene("Nivel 2");
+    }
+    public void CaragaNivel3()
+    {
+      
+        SceneManager.LoadScene("Nivel 3");
     }
     public void ActivarPantalla(GameObject pantalla)
     {
         pantalla.SetActive(true);
     }
-
+   
     public void DesactivarPantalla(GameObject pantalla)
     {
         pantalla.SetActive(false);
+    
     }
-
     public void Facebook()
     {
         Application.OpenURL("https://www.facebook.com");
     }
+
+
 }

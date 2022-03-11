@@ -2,15 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Solis Torres Mariana Nazaret
+
 public class VidasMapache : MonoBehaviour
 {
+
+    public GameObject panelGameOver;
+    public GameObject panelWin;
+
     public GameObject []vida;
     int vidaMapache = 5;
 
-
-    public void Agragavida()
+    //Subscripcion a eventos
+    private void OnEnable()
     {
-        vidaMapache =+ 1;
+        RocoCollider.SumaVida += Agregavida;
+        RocoCollider.RestaVida += Eliminavida;
+        Arboles.PanelWin += Win;
+        Arboles.PanelGameOver += GameOver;
+    }
+
+    private void OnDisable()
+    {
+        RocoCollider.SumaVida -= Agregavida;
+        RocoCollider.RestaVida -= Eliminavida;
+        Arboles.PanelWin -= Win;
+        Arboles.PanelGameOver -= GameOver;
+    }
+
+    public void Agregavida()
+    {
+        vidaMapache += 1;
         switch (vidaMapache)
         {
             case 5:
@@ -30,9 +52,10 @@ public class VidasMapache : MonoBehaviour
                 break;
         }
     }
+
     public void Eliminavida()
     {
-        vidaMapache = -1;
+        vidaMapache -= 1;
         switch (vidaMapache)
         {
             case 4:
@@ -49,7 +72,21 @@ public class VidasMapache : MonoBehaviour
                 break;
             case 0:
                 vida[0].SetActive(false);
+                GameOver();
                 break;
         }
     }
+
+    public void GameOver()
+    {
+        panelGameOver.SetActive(true);
+  
+    }
+
+    public void Win()
+    {
+        panelWin.SetActive(true);
+
+    }
+
 }

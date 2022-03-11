@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
     public Joystick joystickMover;
     public Joystick joystickGirar;
 
