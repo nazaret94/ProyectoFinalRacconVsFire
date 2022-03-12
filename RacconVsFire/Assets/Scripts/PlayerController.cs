@@ -6,6 +6,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private void OnEnable()
+    {
+        NumeroGotas.AnimaG += Globo;
+    }
+    private void OnDisable()
+    {
+        NumeroGotas.AnimaG -= Globo;
+    }
+
     public Joystick joystickMover;
     public Joystick joystickGirar;
 

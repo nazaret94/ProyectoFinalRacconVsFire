@@ -11,6 +11,9 @@ public class RocoCollider : MonoBehaviour
     public static event Vida SumaVida;
     public static event Vida RestaVida;
 
+    public delegate void Gota();
+    public static event Gota SumaGota;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.tag == "Flama")
@@ -18,6 +21,7 @@ public class RocoCollider : MonoBehaviour
            if(RestaVida != null)
             {
                 RestaVida();
+                other.gameObject.SetActive(false);
             } 
         }
 
@@ -26,7 +30,14 @@ public class RocoCollider : MonoBehaviour
             if(SumaVida!= null)
             {
                 SumaVida();
+                other.gameObject.SetActive(false);
             }
+        }
+
+        if(other.transform.tag == "Gota")
+        {
+            SumaGota();
+            other.gameObject.SetActive(false);
         }
 
     }

@@ -1,0 +1,230 @@
+Unity Editor version:    2020.3.25f1 (9b9180224418)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 10.15.6 (Build 19G2021)
+Darwin version:          19.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker14
+-projectPath
+/Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire
+-logFile
+Logs/AssetImportWorker14.log
+-srvPort
+62062
+Successfully changed project path to: /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire
+/Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 121.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.25f1 (9b9180224418)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Assets
+GfxDevice: creating device client; threaded=0
+2022-03-10 09:58:19.911 Unity[48745:1865217] iMac preferred device: NVIDIA GeForce GT 640M (high power)
+2022-03-10 09:58:19.912 Unity[48745:1865217] Metal devices available: 1
+2022-03-10 09:58:19.912 Unity[48745:1865217] 0: NVIDIA GeForce GT 640M (high power)
+2022-03-10 09:58:19.912 Unity[48745:1865217] Using device NVIDIA GeForce GT 640M (high power)
+Initializing Metal device caps: NVIDIA GeForce GT 640M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56745
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.25f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001228 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 124.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to find Tools for Unity bridge dll for Visual Studio for Mac /Applications/Visual Studio.app
+Mono: successfully reloaded assembly
+- Completed reload, in  1.226 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1226ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1006ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (336ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (414ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (124ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (181ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003811 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 121.15 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to find Tools for Unity bridge dll for Visual Studio for Mac /Applications/Visual Studio.app
+Mono: successfully reloaded assembly
+- Completed reload, in  2.474 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2491ms)
+		BeginReloadAssembly (287ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (2088ms)
+			LoadAssemblies (149ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (776ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (141ms)
+			SetupLoadedEditorAssemblies (768ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (121ms)
+				BeforeProcessingInitializeOnLoad (172ms)
+				ProcessInitializeOnLoadAttributes (446ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 0.095786 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.215859 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.54 seconds
+Initializing Unity extensions:
+[C# Project] Writing /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/RacconVsFire.sln because it has changed
+[C# Project] First difference on line 2
+
+[C# Project] Current /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/RacconVsFire.sln:
+[C# Project]   002: Microsoft Visual Studio Solution File, Format Version 12.00
+[C# Project]   003: # Visual Studio 15
+[C# Project]   004: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{49C51F2F-3364-4296-F1CA-C18A3DB2C7D9}"
+[C# Project]   005: EndProject
+[C# Project]   006: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxophobic.Utils.Scripts", "Boxophobic.Utils.Scripts.csproj", "{F8520203-ED7B-3A5D-C668-A32A7F144AAF}"
+
+[C# Project] New /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/RacconVsFire.sln:
+[C# Project]   002: Microsoft Visual Studio Solution File, Format Version 11.00
+[C# Project]   003: # Visual Studio 2010
+[C# Project]   004: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.UI", "UnityEngine.UI.csproj", "{28E21122-0137-5601-953D-19E52AF1127B}"
+[C# Project]   005: EndProject
+[C# Project]   006: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Core.Runtime", "Unity.RenderPipelines.Core.Runtime.csproj", "{310D5351-EE79-458D-2A27-35C30AC2C0D7}"
+[C# Project] Writing /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Assembly-CSharp.csproj because it has changed
+[C# Project] First difference on line 4
+
+[C# Project] Current /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Assembly-CSharp.csproj:
+[C# Project]   004:     <LangVersion>8.0</LangVersion>
+[C# Project]   005:   </PropertyGroup>
+[C# Project]   006:   <PropertyGroup>
+[C# Project]   007:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project]   008:     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+
+[C# Project] New /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Assembly-CSharp.csproj:
+[C# Project]   004:     <LangVersion>latest</LangVersion>
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project] Writing /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Boxophobic.Utils.Scripts.csproj because it has changed
+[C# Project] First difference on line 4
+
+[C# Project] Current /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Boxophobic.Utils.Scripts.csproj:
+[C# Project]   004:     <LangVersion>8.0</LangVersion>
+[C# Project]   005:   </PropertyGroup>
+[C# Project]   006:   <PropertyGroup>
+[C# Project]   007:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project]   008:     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+
+[C# Project] New /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Boxophobic.Utils.Scripts.csproj:
+[C# Project]   004:     <LangVersion>latest</LangVersion>
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project] Writing /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Assembly-CSharp-Editor.csproj because it has changed
+[C# Project] First difference on line 4
+
+[C# Project] Current /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Assembly-CSharp-Editor.csproj:
+[C# Project]   004:     <LangVersion>8.0</LangVersion>
+[C# Project]   005:   </PropertyGroup>
+[C# Project]   006:   <PropertyGroup>
+[C# Project]   007:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project]   008:     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+
+[C# Project] New /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Assembly-CSharp-Editor.csproj:
+[C# Project]   004:     <LangVersion>latest</LangVersion>
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project] Writing /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Boxophobic.Utils.Editor.csproj because it has changed
+[C# Project] First difference on line 4
+
+[C# Project] Current /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Boxophobic.Utils.Editor.csproj:
+[C# Project]   004:     <LangVersion>8.0</LangVersion>
+[C# Project]   005:   </PropertyGroup>
+[C# Project]   006:   <PropertyGroup>
+[C# Project]   007:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project]   008:     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+
+[C# Project] New /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Boxophobic.Utils.Editor.csproj:
+[C# Project]   004:     <LangVersion>latest</LangVersion>
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>
+[C# Project] Writing /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Boxophobic.SkyboxCubemapExtended.Editor.csproj because it has changed
+[C# Project] First difference on line 4
+
+[C# Project] Current /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Boxophobic.SkyboxCubemapExtended.Editor.csproj:
+[C# Project]   004:     <LangVersion>8.0</LangVersion>
+[C# Project]   005:   </PropertyGroup>
+[C# Project]   006:   <PropertyGroup>
+[C# Project]   007:     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+[C# Project]   008:     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+
+[C# Project] New /Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/Boxophobic.SkyboxCubemapExtended.Editor.csproj:
+[C# Project]   004:     <LangVersion>latest</LangVersion>
+[C# Project]   005:     <CscToolPath>/Applications/Unity/Hub/Editor/2020.3.25f1/Unity.app/Contents/Tools/RoslynScripts</CscToolPath>
+[C# Project]   006:     <CscToolExe>unity_csc.sh</CscToolExe>
+[C# Project]   007:   </PropertyGroup>
+[C# Project]   008:   <PropertyGroup>

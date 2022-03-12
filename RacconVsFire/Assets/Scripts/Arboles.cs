@@ -21,6 +21,7 @@ public class Arboles : MonoBehaviour
     {
         ArbolCollider.ApagaA -= ApagaArbol;
     }
+    public float tiempoA;
 
     public AnimatorStateInfo arbolStateInfo;
     public Animator []arboles;
@@ -39,17 +40,17 @@ public class Arboles : MonoBehaviour
         arboles[0].SetBool("ArbolF", true);
         numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(tiempoA);
         
         arboles[1].SetBool("ArbolF", true);
         numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(tiempoA);
        
         arboles[2].SetBool("ArbolF", true);
         numArbolesSinFuego -= 1; 
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(tiempoA);
         
         arboles[3].SetBool("ArbolF", true);
         numArbolesSinFuego -= 1; 
@@ -58,32 +59,32 @@ public class Arboles : MonoBehaviour
         
         arboles[4].SetBool("ArbolF", true);
         numArbolesSinFuego -= 1; 
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(tiempoA);
        
         arboles[5].SetBool("ArbolF", true);
         numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(tiempoA);
        
         arboles[6].SetBool("ArbolF", true);
         numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(tiempoA);
 
         arboles[7].SetBool("ArbolF", true);
         numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(tiempoA);
 
         arboles[8].SetBool("ArbolF", true);
         numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(tiempoA);
 
         arboles[9].SetBool("ArbolF", true);
         numArbolesSinFuego -= 1;
         numArbolesFuego += 1;
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(tiempoA);
         yield return new WaitForSeconds(1f);
         PanelGameOver();
     }

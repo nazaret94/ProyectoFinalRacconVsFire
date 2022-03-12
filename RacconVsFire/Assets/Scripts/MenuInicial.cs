@@ -30,7 +30,6 @@ public class MenuInicial : MonoBehaviour
     {
         pantalla.SetActive(true);
     }
-   
     public void DesactivarPantalla(GameObject pantalla)
     {
         pantalla.SetActive(false);
