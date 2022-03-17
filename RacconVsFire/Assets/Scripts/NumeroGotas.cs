@@ -9,7 +9,6 @@ public class NumeroGotas : MonoBehaviour
 {
     public delegate void Anima();
     public static event Anima AnimaG;
-
     public Image BotonGlobo;
 
     int Gotas = 0;
@@ -49,7 +48,6 @@ public class NumeroGotas : MonoBehaviour
     {
         if(Gotas != 0)
         {
-            Debug.Log("quita globo");
             BotonGlobo.fillAmount -= .25f;
             globo.SetActive(true);
             Pistola.SetActive(false);

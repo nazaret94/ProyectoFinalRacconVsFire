@@ -1,0 +1,2 @@
+/Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/obj/Debug/Boxophobic.Utils.Editor.csproj.AssemblyReference.cache
+/Users/naz/Documents/GitHub/ProyectoFinalRacconVsFire/RacconVsFire/obj/Debug/Boxophobic.Utils.Editor.csproj.CoreCompileInputs.cache

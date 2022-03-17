@@ -74,7 +74,6 @@ public class VidasMapache : MonoBehaviour
     {
         if(numeroCorazones==1 || numeroCorazones == 2)
         {
-            Debug.Log("boton" + BotonCorazon.fillAmount);
             numeroCorazones -= 1;
             BotonCorazon.fillAmount -= .5f;
             Agregavida();

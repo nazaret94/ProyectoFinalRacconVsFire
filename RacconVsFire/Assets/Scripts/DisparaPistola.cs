@@ -13,7 +13,6 @@ public class DisparaPistola : MonoBehaviour
 
   public void Disparagota()
     {
-        Debug.Log("gota");
         Invoke("Dispara", 1f);
     }
             

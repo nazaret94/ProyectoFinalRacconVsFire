@@ -35,4 +35,9 @@ public class Fuego : MonoBehaviour
         StartCoroutine("CaeFuego");
     }
 
+    public void DesactivarGameO()
+    {
+        this.gameObject.SetActive(false);
+    }
+
 }

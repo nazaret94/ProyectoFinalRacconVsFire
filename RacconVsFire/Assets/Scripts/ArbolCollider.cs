@@ -10,6 +10,7 @@ public class ArbolCollider : MonoBehaviour
     public delegate void ApagaF();
     public static event ApagaF ApagaA;
     public GameObject origenFuego;
+    public ParticleSystem fuegoPart;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,6 +21,7 @@ public class ArbolCollider : MonoBehaviour
             {
                 ApagaA();
             }
+            fuegoPart.Stop();
             origenFuego.SetActive(false);
             this.gameObject.SetActive(false);
         }

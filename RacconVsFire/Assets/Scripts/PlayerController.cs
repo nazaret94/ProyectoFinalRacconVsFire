@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     private void OnEnable()
     {
         NumeroGotas.AnimaG += Globo;
@@ -14,6 +15,9 @@ public class PlayerController : MonoBehaviour
     {
         NumeroGotas.AnimaG -= Globo;
     }
+
+    public AudioSource globo;
+    public AudioSource agua;
 
     public Joystick joystickMover;
     public Joystick joystickGirar;
@@ -82,11 +86,13 @@ public class PlayerController : MonoBehaviour
     public void Dispara()
     {
      rocoAnimator.SetTrigger("Dispara");
+        agua.Play();
     }
 
     public void Globo()
     {
      rocoAnimator.SetTrigger("Globo");
+        globo.Play();
     }
 
 }
