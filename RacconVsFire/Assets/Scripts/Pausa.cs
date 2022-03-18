@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class Pausa : MonoBehaviour
 {
+    public void OnEnable()
+    {
+        VidasMapache.Pausa += EstadoDePausa;
+    }
+    public void OnDisable()
+    {
+        VidasMapache.Pausa -= EstadoDePausa;
+    }
+
     private bool estadoJuego;
     public AudioSource fondo;
 

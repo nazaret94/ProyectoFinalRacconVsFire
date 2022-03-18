@@ -9,6 +9,9 @@ public class VidasMapache : MonoBehaviour
 {
     public Image BotonCorazon;
 
+    public delegate void Estado();
+    public static event Estado Pausa;
+
     public GameObject panelGameOver;
     public GameObject panelWin;
 
@@ -110,12 +113,12 @@ public class VidasMapache : MonoBehaviour
     public void GameOver()
     {
         panelGameOver.SetActive(true);
-  
+        Pausa();
     }
 
     public void Win()
     {
         panelWin.SetActive(true);
-
+        Pausa();
     }
 }

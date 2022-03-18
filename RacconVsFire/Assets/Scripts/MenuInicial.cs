@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuInicial : MonoBehaviour
 {
-  
+
     public void CargaNivel1()
     {
         SceneManager.LoadScene("Nivel 1");
